@@ -43,5 +43,10 @@ public class UserServImpl implements UserServ {
 		// TODO Auto-generated method stub
 		return userDao.findAll();
 	}
+	@Transactional
+	public User Autontification(String login, String pass) {
+		// TODO Auto-generated method stu\
+		return userDao.findUserByloginAndPassword(login, pass);
+	}
 
 }

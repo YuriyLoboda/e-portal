@@ -10,4 +10,5 @@ public interface UserServ {
 	void update(User catalog);
 	void delete(User catalog);
 	List<User> findAll();
+	User Autontification (String login, String pass);
 }

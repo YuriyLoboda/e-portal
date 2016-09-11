@@ -11,4 +11,5 @@ public interface UserDao {
 	void update(User user);
 	void delete(User user);
 	List<User> findAll();
+	User findUserByloginAndPassword(String login,String pass);
 }

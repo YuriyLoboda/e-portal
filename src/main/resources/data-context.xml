@@ -15,8 +15,8 @@
 		http://www.springframework.org/schema/aop/spring-aop.xsd">
  	<aop:aspectj-autoproxy proxy-target-class="true"/>
 
-    <context:component-scan base-package="dao"></context:component-scan>
-    <context:component-scan base-package="service"></context:component-scan>
+     <context:component-scan base-package="dao"></context:component-scan>
+  	 <context:component-scan base-package="service"></context:component-scan>
     
    
     <bean id="myConnection" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close"

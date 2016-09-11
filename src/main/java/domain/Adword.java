@@ -106,9 +106,4 @@ public abstract class Adword {
 	}
 
 
-	
-	
-	
-	
-
 }

@@ -1,0 +1,20 @@
+html{
+padding-top: 25px;
+  background-color:white;
+}
+
+.autorization{
+	display: inline-block;
+	padding: 10px 20px;
+    position: absolute;
+    margin-left: 810px;
+    border: 1px solid marron;
+    background: rgb(180,180,180);
+    width: 200px; 
+}
+.registration{
+	 	margin-left: 400px;
+		 position: absolute;
+		 display:none;
+		 width : 300px;
+}
