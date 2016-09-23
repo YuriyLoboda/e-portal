@@ -8,13 +8,34 @@ padding-top: 25px;
 	padding: 10px 20px;
     position: absolute;
     margin-left: 810px;
+    margin-top : 60px;
     border: 1px solid marron;
     background: rgb(180,180,180);
     width: 200px; 
+}
+.autorization input[type="button"]{
+	width: 180px;
+	 border-radius :20px;
+	 margin-top: 10px
+}
+.autorization input[type="submit"]{
+	width: 180px;
+	 border-radius :20px;
+	 margin-top: 10px
 }
 .registration{
 	 	margin-left: 400px;
 		 position: absolute;
 		 display:none;
 		 width : 300px;
+}
+.language{
+	display:inline-block;
+	margin-left: 780px;
+	position: absolute;
+	
+}
+ul li {
+	display : inline-block;
+	list-style-type : none;
 }

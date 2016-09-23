@@ -36,7 +36,7 @@ public class RegistrationAndAuthenticationController   {
 
 	
 	
-	@RequestMapping(value="userCheck")
+	@RequestMapping(value="userCabinet")
 	public String checkUser(@RequestParam(value ="login",required=false)String login ,
 			@RequestParam(value= "pass",required=false)String pass)
 	{
@@ -44,12 +44,14 @@ public class RegistrationAndAuthenticationController   {
 		UserServImpl uServ = context.getBean("userServ", UserServImpl.class);
 		User user = uServ.Autontification(login, pass);
 		if (user!=null){
-			return "/general";
+			System.out.println(context.getMessage("morning", null,"Default", null));
+			return "general";
+			
 		}
-		return "/errorPage";
+		return "errorPage";
 		
 	}
-	@RequestMapping(value="/userReg")
+	@RequestMapping(value="userReg")
 	public String userReg(@RequestParam(value="login" , required=false) String login,@RequestParam(value="pass" , required=false)String pass,
 			@RequestParam(value="passConfirm" , required=false) String passConfirm,@RequestParam(value="mail" , required=false) String mail,
 			@RequestParam(value="userName" , required=false) String userName,@RequestParam(value="phone" , required=false) String phone){
@@ -59,7 +61,7 @@ public class RegistrationAndAuthenticationController   {
 		this.mail=mail;
 		this.userName=userName;
 		this.phone=phone;
-		
+	
 		Sender mailer = context.getBean("mailService", Sender.class);	
         mailer.sendMail(mail, "Hello Dier "+login+"", "Перейдя по этой ссылке Вы подтверждаете регистрацию на нашем портале http://localhost:8080/e-portal/confirm");
 
