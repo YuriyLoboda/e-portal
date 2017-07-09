@@ -20,14 +20,14 @@ public class Test {
 		ApplicationContext context = new ClassPathXmlApplicationContext("data-context.xml");
 		AdwordServImpl serv = context.getBean("adwordServ",AdwordServImpl.class);
 		/*
-		
+		asdasd
 		CatalogServImpl cServ = context.getBean("catalogServ",CatalogServImpl.class);
 		Catalog cat = new Catalog();
 		cat.setType("Style");
 		cServ.add(cat);
 		ASShoes shoes = new ASShoes();
 		shoes.setCatalog(1l);
-		shoes.setDiscription("кожа");
+		shoes.setDiscription("пїЅпїЅпїЅпїЅ");
 		shoes.setSize(43.0);		serv.add(shoes);
 		
 		cat=cServ.read(1l);
@@ -41,6 +41,8 @@ public class Test {
 	int lenA=s.length();
 	for(int i=0;i<lenA;i++){
 		System.out.println(s.substring(i, i+2));
+
+
 	}
 		
 	}
